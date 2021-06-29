@@ -41,10 +41,10 @@ accounting entry, in no predetermined order.
 
 Our module expects the files to meet the following technical specifications:
 
-- **Encoding**: UTF-8, UTF-8-SIG and iso8859_15.
-- **Separator**: any of these: `;` or `|` or `,` or `TAB`.
-- **Line terminators**: both CR+LF (`\\r\\n`) and LF (`\\n`) character groups are supported.
-- **Date format**: `%Y%m%d`
+* **Encoding**: UTF-8, UTF-8-SIG and iso8859_15.
+* **Separator**: any of these: `;` or `|` or `,` or `TAB`.
+* **Line terminators**: both CR+LF (`\\r\\n`) and LF (`\\n`) character groups are supported.
+* **Date format**: `%Y%m%d`
 
 Fields description and use
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -187,16 +187,16 @@ at first created with the default type "general".
 At the end of the import process, the type is determined as per these rules regarding related
 moves and accounts:
 
-- | **bank**: Moves in these journals always have a line (debit or credit) impacting a
+* | **bank**: Moves in these journals always have a line (debit or credit) impacting a
     liquidity account.
   | 'cash' / 'bank' can be interchanged, so 'bank' is set everywhere when this condition is met.
-- | **sale**: Moves in these journals mostly have debit lines on receivable accounts and
+* | **sale**: Moves in these journals mostly have debit lines on receivable accounts and
     credit lines on tax income accounts.
   | Sale refund journal items are debit/credit inverted.
-- | **purchase**: Moves in these journals mostly have credit lines on payable accounts and
+* | **purchase**: Moves in these journals mostly have credit lines on payable accounts and
     debit lines on expense accounts.
   | Purchase refund journal items are debit/credit inverted.
-- | **general**: for everything else.
+* | **general**: for everything else.
 
 .. note::
     A minimum of 3 moves is necessary for journal type identification.
@@ -240,8 +240,8 @@ There is a rounding tolerance with a currency-related precision on debit and cre
 EUR)*. Under this tolerance, a new line is added to the move, named 'Import rounding difference',
 targeting the accounts:
 
-- Charges diverses de gestion courante (658000) for added debits
-- Produits diverses de gestion courante (758000) for added credits
+* Charges diverses de gestion courante (658000) for added debits
+* Produits diverses de gestion courante (758000) for added credits
 
 Missing move name
 *****************
@@ -277,8 +277,8 @@ To do so, go to :menuselection:`Accounting --> Reporting --> France --> FEC`.
    then search for the module named **France-FEC** and make sure it is installed.
 
 .. seealso::
-   - `Official Technical Specification (fr) <https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000027804775>`_
-   - `Test-Compta-Demat (Official FEC Testing tool) <https://github.com/DGFiP/Test-Compta-Demat>`_
+   * `Official Technical Specification (fr) <https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000027804775>`_
+   * `Test-Compta-Demat (Official FEC Testing tool) <https://github.com/DGFiP/Test-Compta-Demat>`_
 
 French Accounting Reports
 =========================
@@ -286,9 +286,9 @@ French Accounting Reports
 If you have installed the French Accounting, you have access to some accounting reports specific
 to France:
 
-- Bilan comptable
-- Compte de résultats
-- Plan de Taxes France
+* Bilan comptable
+* Compte de résultats
+* Plan de Taxes France
 
 Get the VAT anti-fraud certification with Odoo
 ==============================================
@@ -442,8 +442,9 @@ in the module’s functions caused by 3rd party applications not certified by Od
 More Information
 ----------------
 
-You will find more information about this legislation in the official documents:
+You will find more information about this legislation in the following official documents.
 
-* `Frequently Asked Questions <https://www.economie.gouv.fr/files/files/directions_services/dgfip/controle_fiscal/actualites_reponses/logiciels_de_caisse.pdf>`_
-* `Official Statement <http://bofip.impots.gouv.fr/bofip/10691-PGP.html?identifiant=BOI-TVA-DECLA-30-10-30-20160803>`_
-* `Item 88 of Finance Law 2016 <https://www.legifrance.gouv.fr/affichTexteArticle.do?idArticle=JORFARTI000031732968&categorieLien=id&cidTexte=JORFTEXT000031732865>`_
+.. seealso::
+    * `Frequently Asked Questions <https://www.economie.gouv.fr/files/files/directions_services/dgfip/controle_fiscal/actualites_reponses/logiciels_de_caisse.pdf>`_
+    * `Official Statement <http://bofip.impots.gouv.fr/bofip/10691-PGP.html?identifiant=BOI-TVA-DECLA-30-10-30-20160803>`_
+    * `Item 88 of Finance Law 2016 <https://www.legifrance.gouv.fr/affichTexteArticle.do?idArticle=JORFARTI000031732968&categorieLien=id&cidTexte=JORFTEXT000031732865>`_
