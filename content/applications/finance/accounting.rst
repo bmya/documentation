@@ -1,20 +1,9 @@
 :show-content:
+:show-toc:
 
 ========================
 Accounting and Invoicing
 ========================
-
-.. toctree::
-   :titlesonly:
-
-   accounting/getting_started
-   accounting/receivables
-   accounting/payables
-   accounting/bank
-   accounting/taxation
-   accounting/reporting
-   accounting/others
-   accounting/fiscal_localizations
 
 **Odoo Invoicing** is a standalone invoicing app that allows you to :doc:`issue invoices
 <accounting/receivables/customer_invoices/overview>`, send them to your customers, and manage
@@ -32,6 +21,20 @@ core of its development with its perfect integration with all Odoo apps and with
 .. seealso::
    - `Odoo Invoicing: product page <https://www.odoo.com/app/invoicing>`_
    - `Odoo Accounting: product page <https://www.odoo.com/app/accounting>`_
+
+
+.. toctree::
+   :titlesonly:
+
+   accounting/getting_started
+   accounting/receivables
+   accounting/payables
+   accounting/bank
+   accounting/taxation
+   accounting/reporting
+   accounting/others
+   accounting/fiscal_localizations
+
 
 Double-entry bookkeeping
 ========================

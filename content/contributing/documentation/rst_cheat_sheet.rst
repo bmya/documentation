@@ -515,6 +515,8 @@ Document metadata
 +-----------------+--------------------------------------------------------------------------------+
 | `show-content`  |  Make a toctree page accessible from the navigation menu.                      |
 +-----------------+--------------------------------------------------------------------------------+
+| `show-toc`      |  When show-content, the TOC is not displayed unless you add this meta.         |
++-----------------+--------------------------------------------------------------------------------+
 | `code-column`   |  | Show a dynamic side column that can be used to display interactive          |
 |                 |    tutorials or code excerpts.                                                 |
 |                 |  | For example, see :doc:`/developer/webservices/upgrade` or                   |
