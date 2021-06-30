@@ -951,8 +951,8 @@ Symbols and Conventions
 
 .. _reference/guidelines/js:
 
-Javascript and CSS
-==================
+Javascript and Components
+=========================
 
 Static files organization
 --------------------------
@@ -999,17 +999,79 @@ More precise JS guidelines are detailed in the `github wiki  <https://github.com
 You may also have a look at existing API in Javascript by looking Javascript
 References.
 
-CSS coding guidelines
----------------------
+Template guidelines
+-------------------
 
-- Prefix all your classes with *o_<module_name>* where *module_name* is the
-  technical name of the module ('sale', 'im_chat', ...) or the main route
-  reserved by the module (for website module mainly, i.e. : 'o_forum' for
-  *website_forum* module). The only exception for this rule is the
-  webclient: it simply uses *o_* prefix.
-- Avoid using *id* tag
-- Use Bootstrap native classes
-- Use underscore lowercase notation to name class
+Structure
+~~~~~~~~~
+
+.. note:: These rules are in place because the general structure of the template is considered more important than the details of each line.
+
+- Each block element should be on its own line.
+- Small inline/style/text elements can be placed either on the same line as their parent or on their own line (depending on their importance and size).
+- Indentation of 4 spaces is applied between a parent and its children elements. The closing tag of a parent should always be at the same indentation level as its opening tag.
+- All the attributes of an element should be on the same line as the element itself. No character limit per line.
+- It is preferable to use instructions (such as `t-if`) directly on the element on which they apply (as opposed to having them on a separate `<t>` element).
+
+Element
+~~~~~~~
+
+The root element and each other *important* element of the template should have a `name` attribute to ease the readability of the template.
+
+.. note::
+    The importance of an element in regard to this rule is left to the appreciation of the reviewer. If the structure of the template is hard to follow when reading just the first words of each line, it is probably a sign that some `name` attributes are missing on those lines.
+
+The name on the root element should follow the format `o-ComponentName`. And for children elements: `o-ComponentName-partName` where:
+
+- `o-` is a must have Odoo prefix.
+- `ComponentName` is the PascalCase name of the current component/template.
+- `-` is a mandatory hyphen to separate the component name and the part name.
+- `partName` is the camelCase name of the child element referred by this `name` attribute.
+
+The following order is applied for attributes:
+
+ #. `name`
+ #. `t-if`, `t-elif`, `t-else`
+ #. `t-foreach`, `t-as`
+ #. attributes specific to this type of element (eg. `type` for `<input>`, `src` for `<img>`)
+ #. `t-on-`
+ #. `class`
+ #. other generic attributes (eg. `title`, `aria-`)
+ #. `id`
+ #. OWL technical attributes (eg. `t-key`, `t-ref`)
+
+`t-att-` and `t-attf-` variations are ordered just after their static counter-part, in this order respectively.
+
+.. note:: `id` should not be used unless absolutely necessary (such as for making an anchor, or as the `for` target of a `label`), and then it should be uniquely generated.
+
+Inside the `class` attribute itself, the following order should be respected:
+
+ #. Custom template class (only if necessary for adding custom style).
+ #. Bootstrap component classes (eg. `btn`, `card`).
+ #. Bootstrap layout classes (anything that changes the size or position of the element or its children, eg. `d-flex`, `container`, `mt-2`).
+ #. Bootstrap style classes (eg. `text-muted`, `bg-primary`).
+
+Style
+~~~~~
+
+Prefer using Bootstrap components and utilities over anything else, by applying their classes on the template. Custom style should only be used if absolutely necessary.
+
+.. warning:: Before writing custom style you are expected to know all existing Bootstrap components, utilities, mixin and variables, as well as all of Odoo's extra components, utilities, mixin and variables.
+
+If necessary a `css` or `scss` file should be used, one per component/template. Inside that file, the style rules should be as flat as possible and target specific parts of the component/template.
+
+
+The naming guideline for targeting parts of the template with CSS classes is: `o-ComponentName-styleName` where
+
+- `o-` is a must have Odoo prefix.
+- `ComponentName` is the PascalCase name of the current component/template.
+- `-` is a mandatory hyphen to separate the component name and the style name.
+- `styleName` is the camelCase name of the style to be applied on this element.
+
+Rules in `scss` files should use existing mixin and variables whenever available. A lot of values  (eg. color, size, ...) already have a corresponding variable either in Bootstrap or in Odoo. Look for them and use them.
+
+.. note:: Avoid sharing custom component/template classes between different templates/components. If there is a need for generic style, it should probably be added at the framework level instead.
+
 
 .. _reference/guidelines/git:
 
