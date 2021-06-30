@@ -1,9 +1,9 @@
 
 .. _setup/update:
 
-=============================
-Updating an Odoo installation
-=============================
+==============
+Bugfix Updates
+==============
 
 Introduction
 ============

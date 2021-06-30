@@ -3,9 +3,9 @@
 
 .. _reference/qweb:
 
-====
-QWeb
-====
+==========
+QWeb Views
+==========
 
 QWeb is the primary templating_ engine used by Odoo\ [#othertemplates]_. It
 is an XML templating engine\ [#genshif]_ and used mostly to generate HTML_

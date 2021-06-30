@@ -1,9 +1,9 @@
 
 .. _reference/cmdline:
 
-================================
-Command-line interface: odoo-bin
-================================
+=============
+CLI: odoo-bin
+=============
 
 .. _reference/cmdline/server:
 

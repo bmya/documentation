@@ -1,9 +1,9 @@
 :nosearch:
 :types: reference
 
-=========
-Reference
-=========
+================
+Reference Guides
+================
 
 .. toctree::
     :titlesonly:
@@ -13,17 +13,13 @@ Reference
     reference/actions
     reference/views
     reference/module
-    reference/cmdline
     reference/security
     reference/testing
+    reference/reports
 
-    reference/http
-    reference/qweb
     reference/javascript_cheatsheet
     reference/javascript_reference
-    reference/translations
-    reference/reports
+    reference/qweb
+    reference/http
     reference/mixins
-    reference/guidelines
     reference/mobile
-    reference/iot

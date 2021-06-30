@@ -6,9 +6,9 @@
 
 .. _db-upgrade:
 
-=======
-Upgrade
-=======
+===============
+Upgrade Version
+===============
 
 .. _db-upgrade/overview:
 
@@ -412,4 +412,4 @@ This is a factor to take into consideration before upgrading. If you are on an o
 suggest you to prefer the most recent version to benefit from a longer support (before having to
 upgrade again).
 
-You can get more information about our :doc:`supported versions <../services/support/supported_versions>`.
+You can get more information about our :doc:`supported versions <supported_versions>`.

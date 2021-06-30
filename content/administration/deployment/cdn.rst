@@ -1,7 +1,7 @@
 
-========================================
-Deploying with Content Delivery Networks
-========================================
+================
+Setting up a CDN
+================
 
 .. _reference/cdn/keycdn:
 

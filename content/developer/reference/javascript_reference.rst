@@ -1341,7 +1341,7 @@ to be translated.  The way it currently works is the following:
   is found.
 
 Note that translations are explained in more details, from the server point of
-view, in the document :doc:`translations`.
+view, in the document :doc:`/developer/misc/i18n/translations`.
 
 There are two important functions for the translations in javascript: *_t* and
 *_lt*.  The difference is that *_lt* is lazily evaluated.
