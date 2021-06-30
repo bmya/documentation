@@ -485,18 +485,6 @@ header.o_main_header {
             }
         }
 
-        // pages with full width: Legal
-        &.o_fullwidth_page {
-            .toctree-l1 > a {
-                display: block;
-                color: $gray-darker;
-                @include font-size($h2-font-size);
-                padding-bottom: $padding-xs;
-                border-bottom: 1px solid $gray-light;
-                margin-bottom: $margin-s;
-            }
-        }
-
         // pages with column for code on the right
         &.o_has_code_column {
             article.doc-body {
@@ -583,22 +571,36 @@ header.o_main_header {
         }
 
         .toctree-wrapper {
-            > ul {
+            > ul, .toctree-l1 > ul {
                 padding-left: 0;
                 list-style: none;
             }
 
-            .toctree-l1 > a[href="#"] {
+            .toctree-l1 > a {
+                display: block;
+                @include font-size($h2-font-size);
+                margin-top: $padding-m;
+                padding-bottom: $padding-xs;
+                border-bottom: 1px solid $gray-light;
+                margin-bottom: $margin-s;
                 font-size: 1.2rem;
                 font-weight: 600;
-                border-bottom: 2px solid $gray-darker;
+            }
+
+            .toctree-l1 {
+                margin-bottom: 2rem;
+            }
+
+            .toctree-l2 > a[href="#"] {
+                margin-top: 0.7rem;
+                display: inline-block;
             }
 
             a[href="#"] {
                 pointer-events: none;
                 cursor: default;
                 color: $gray-darker;
-                font-weight: $fw_regular;
+                font-weight: $fw_semibold;
             }
         }
 
