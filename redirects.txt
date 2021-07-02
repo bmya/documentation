@@ -228,3 +228,18 @@ developer/reference/iot.rst                             developer/misc/other/iot
 applications/general/multi_companies.rst                applications/general/users/companies.rst
 applications/general/unsplash.rst                       applications/websites/website/optimize/unsplash.rst
 
+
+developer/actions.rst                           developer/addons/actions.rst
+developer/data.rst                              developer/addons/data.rst
+developer/http.rst                              developer/addons/http.rst
+developer/mixins.rst                            developer/addons/mixins.rst
+developer/module.rst                            developer/addons/module.rst
+developer/orm.rst                               developer/addons/orm.rst
+developer/reports.rst                           developer/addons/reports.rst
+developer/security.rst                          developer/addons/security.rst
+developer/testing.rst                           developer/addons/testing.rst
+developer/views.rst                             developer/addons/views.rst
+developer/javascript_cheatsheet.rst             developer/javascript/javascript_cheatsheet.rst
+developer/javascript_reference.rst              developer/javascript/javascript_reference.rst
+developer/mobile.rst                            developer/javascript/mobile.rst
+developer/qweb.rst                              developer/javascript/qweb.rst
