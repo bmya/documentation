@@ -80,4 +80,4 @@ OpenERP 7.0, 6.1, 6.0 and 5.0 is not supported anymore, on any platform.
 
 TinyERP 4.0, 3.0, 2.0 and 1.0 is not supported anymore, on any platform.
 
-You should consider `upgrading <https://upgrade.odoo.com/>`_ your database.
+Even though we don't support older version, you can always `upgrade from any version <https://upgrade.odoo.com/>`_.

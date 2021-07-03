@@ -1,7 +1,7 @@
 
-==============
-Deploying Odoo
-==============
+====================
+System Configuration
+====================
 
 This document describes basic steps to set up Odoo in production or on an
 internet-facing server. It follows :ref:`installation <setup/install>`, and is

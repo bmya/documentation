@@ -1,9 +1,9 @@
 
 .. _db_management/hosting_changes:
 
-===============
-Hosting Changes
-===============
+==============
+Hosting Change
+==============
 
 You may want to move your Odoo database from one hosting solution to another.
 Depending on the platforms, you have to do it by yourself or contact our support team first.

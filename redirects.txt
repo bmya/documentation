@@ -228,7 +228,6 @@ developer/reference/iot.rst                             developer/misc/other/iot
 applications/general/multi_companies.rst                applications/general/users/companies.rst
 applications/general/unsplash.rst                       applications/websites/website/optimize/unsplash.rst
 
-
 developer/actions.rst                           developer/addons/actions.rst
 developer/data.rst                              developer/addons/data.rst
 developer/http.rst                              developer/addons/http.rst
@@ -243,3 +242,11 @@ developer/javascript_cheatsheet.rst             developer/javascript/javascript_
 developer/javascript_reference.rst              developer/javascript/javascript_reference.rst
 developer/mobile.rst                            developer/javascript/mobile.rst
 developer/qweb.rst                              developer/javascript/qweb.rst
+
+administration/db_management/db_premise.rst          administration/maintain/db_premise.rst
+administration/db_upgrade.rst                        administration/maintain/db_upgrade.rst
+administration/enterprise.rst                        administration/maintain/enterprise.rst
+administration/db_management/hosting_changes.rst     administration/maintain/hosting_changes.rst
+administration/supported_versions.rst                administration/maintain/supported_versions.rst
+administration/update.rst                            administration/maintain/update.rst
+administration/install.rst                           administration/deployment/install.rst

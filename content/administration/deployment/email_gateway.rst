@@ -1,7 +1,7 @@
 
-==================
-Odoo email gateway
-==================
+=============
+Email Gateway
+=============
 
 The Odoo mail gateway allows you to inject directly all the received emails in Odoo.
 

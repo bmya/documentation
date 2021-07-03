@@ -32,22 +32,22 @@
                 </ul>
             </div>
             <div class="col-lg-6">
-                <h2 class="border-top pt-4 pt-lg-0"><a href="{{ pathto('administration') }}">{{ _("System Administration") }}</a></h2>
+                <h2 class="border-top pt-4 pt-lg-0"><a href="{{ pathto('administration') }}">{{ _("Install & Maintain") }}</a></h2>
                 <p class="text-muted">{{ _("Learn how to install, deploy an dupgrade Odoo on premise or on Odoo.sh.") }}</p>
                 <h5 class="text-muted pt-3 text-uppercase fw_semibold">{{ _("Top Links") }}</h5>
                 <ul class="list-unstyled">
                     <li>
-                        <a href=" {{ pathto('administration/install') }} " class="stretched-link">
+                        <a href=" {{ pathto('administration/deploy/install') }} " class="stretched-link">
                             {{ _("Installing Odoo") }}
                         </a>
                     </li>
                     <li>
                         <a href="{{ pathto('administration/deployment/deploy') }}" class="stretched-link">
-                            {{ _("Deploying Odoo") }}
+                            {{ _("Configuring Odoo") }}
                         </a>
                     </li>
                     <li>
-                        <a href="{{ pathto('administration/update') }}" class="stretched-link">
+                        <a href="{{ pathto('administration/maintain/update') }}" class="stretched-link">
                             {{ _("Updating Odoo") }}
                         </a>
                     </li>

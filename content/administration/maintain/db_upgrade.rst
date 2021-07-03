@@ -6,9 +6,9 @@
 
 .. _db-upgrade:
 
-===============
-Upgrade Version
-===============
+================
+Versions Upgrade
+================
 
 .. _db-upgrade/overview:
 
@@ -20,8 +20,7 @@ Overview
 The upgrade process
 -------------------
 
-This documentation is for our *On-Premise* (self-hosted) and *Odoo.sh* customers. If you are hosted
-Online, please check our :ref:`instruction page for our Online (SaaS) customers <upgrade_button>`.
+This documentation is for our *On-Premise* (self-hosted) and *Odoo.sh* customers.
 
 .. _db-upgrade/definition:
 
@@ -109,8 +108,7 @@ The upgrade process varies depending on where your database is hosted.
 Online (SaaS)
 -------------
 
-If you are hosted Online, please check our :ref:`instruction page for our Online (SaaS) customers
-<upgrade_button>`.
+If you are hosted Online, please check your `database manager <https://www.odoo.com/my/databases>`_.
 
 .. _db-upgrade/odoo-sh:
 
@@ -118,7 +116,7 @@ Odoo.sh
 -------
 
 If you are Odoo.sh hosted, check our :doc:`specific instructions to be able to upgrade
-<odoo_sh/advanced/upgrade_your_database>`.
+<../odoo_sh/advanced/upgrade_your_database>`.
 
 .. _db-upgrade/on-premise:
 
@@ -351,7 +349,7 @@ for the production request.
 Upgrade of the custom modules
 -----------------------------
 
-As stated in our :doc:`../legal/terms/enterprise`, section :ref:`charges_standard`, this optional
+As stated in our :doc:`/legal/terms/enterprise`, section :ref:`charges_standard`, this optional
 service is subject to additional fees.
 
 If you have a custom code, you can choose to have it upgraded by our services, by one of our
@@ -376,7 +374,7 @@ Switching the hosting types (Self-hosted vs Online vs Odoo.sh)
 An upgrade does not cover a change of `Hosting types <https://www.odoo.com/page/hosting-types>`_.
 
 Open the following link to get :doc:`more information about how to change your hosting type
-<db_management/hosting_changes>`.
+<hosting_changes>`.
 
 .. note:: |assistance-contact|
 
