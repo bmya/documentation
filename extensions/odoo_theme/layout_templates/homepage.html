@@ -37,7 +37,7 @@
                 <h5 class="text-muted pt-3 text-uppercase fw_semibold">{{ _("Top Links") }}</h5>
                 <ul class="list-unstyled">
                     <li>
-                        <a href=" {{ pathto('administration/deploy/install') }} " class="stretched-link">
+                        <a href=" {{ pathto('administration/deployment/install') }} " class="stretched-link">
                             {{ _("Installing Odoo") }}
                         </a>
                     </li>
@@ -67,22 +67,27 @@
                 <ul class="list-unstyled">
                     <li>
                         <a href="{{ pathto('developer/howtos/backend') }}" class="stretched-link">
-                            {{ _("Building a Module") }}
+                            {{ _("Tutorial: Building a Module") }}
                         </a>
                     </li>
                     <li>
                         <a href="{{ pathto('developer/reference/addons/orm') }}" class="stretched-link">
-                            {{ _("ORM API") }}
+                            {{ _("ORM") }}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ pathto('developer/reference/addons/views') }}" class="stretched-link">
+                            {{ _("Regular Views") }}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ pathto('developer/reference/javascript/qweb') }}" class="stretched-link">
+                            {{ _("QWeb Views") }}
                         </a>
                     </li>
                     <li>
                         <a href="{{ pathto('developer/misc/api/odoo') }}" class="stretched-link">
                             {{ _("External API") }}
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{ pathto('developer/misc/other/cmdline') }}" class="stretched-link">
-                            {{ _("Command-line interface") }}
                         </a>
                     </li>
                 </ul>
