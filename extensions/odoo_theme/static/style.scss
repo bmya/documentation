@@ -963,7 +963,7 @@ footer {
     }
 }
 
-section#user-docs, section#developer, section#install-maintain {
+.o_fullwidth_page {
     div.toctree-wrapper > ul {
         display: flex;
         flex-wrap: wrap;
